@@ -1,0 +1,73 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.rating {
+    transition: transform 1s;
+    color: v.$white;
+    height: 40rem;
+    width: 80%;
+    background-color: v.$blue;
+    margin: 100vh auto;
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 1rem;
+    &__imgc {
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: v.$blue;
+        filter: brightness(110%);
+        
+    }
+    &__heading {
+        color: v.$white;
+        font-size: 2.5rem;
+        padding-left: 1rem;
+    }
+    &__desc {
+        color: v.$gray;
+        font-size: 1.4rem;
+        padding-left: 1rem;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        button {
+            padding: 1.5rem 2rem;
+            background-color: v.$blue;
+            filter: brightness(120%);
+            border-radius: 50%;
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            cursor: pointer;
+            &:hover {
+                transition: background-color .5s;
+                background-color: v.$lightGray;
+            }
+        }
+    }
+    &__input {
+        width: 100%;
+        margin-top: 4rem;
+        padding: 1.5rem 8rem;
+        border-radius: 3rem;
+        color: v.$white;
+        background-color: v.$primary;
+        border: none;
+        font-family: v.$firstFont;
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+        cursor: pointer;
+        &:hover {
+            transition: all 0.5s;
+            color: v.$primary;
+            background-color: v.$white;
+        }
+    }
+    @include m.tablet {
+        width: 45rem;
+    }
+}
