@@ -2,10 +2,7 @@
 @use 'base/mixins' as m;
 
 .answer {
-
     text-align: center;
-    transition: transform 1s;
-
     &__img {
         margin: 2rem auto;
     }

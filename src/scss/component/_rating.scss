@@ -1,13 +1,16 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+// body {
+//     height: 100vh;
+//     width: 100vw;
+// }
 .rating {
-    transition: transform 1s;
     color: v.$white;
-    height: 40rem;
+    height: 100%;
     width: 80%;
     background-color: v.$blue;
-    margin: 100vh auto;
-    padding: 2rem 2rem 0 2rem;
+    margin: 20vh auto 20vh auto;
+    padding: 2rem;
     border-radius: 1rem;
     &__imgc {
         width: 5rem;
@@ -31,6 +34,7 @@
         padding-left: 1rem;
     }
     &__btns {
+        margin-top: 4rem;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -41,7 +45,6 @@
             filter: brightness(120%);
             border-radius: 50%;
             font-size: 1.4rem;
-            margin-top: 2rem;
             cursor: pointer;
             &:hover {
                 transition: background-color .5s;
@@ -51,7 +54,6 @@
     }
     &__input {
         width: 100%;
-        margin-top: 4rem;
         padding: 1.5rem 8rem;
         border-radius: 3rem;
         color: v.$white;
@@ -61,6 +63,7 @@
         font-size: 1.4rem;
         letter-spacing: 3px;
         cursor: pointer;
+        margin-top: 2rem;
         &:hover {
             transition: all 0.5s;
             color: v.$primary;
@@ -68,6 +71,6 @@
         }
     }
     @include m.tablet {
-        width: 45rem;
+        width: 40rem;
     }
 }
