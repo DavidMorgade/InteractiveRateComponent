@@ -5,15 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function initApp() {
-  displayApp();
   addStars();
   displayAnswer();
 }
-
-const displayApp = function () {
-  const app = document.querySelector('.rating');
-  app.style.transform = 'translateY(-190%) rotate(360deg)';
-};
 
 //////////////////////////////// add stars and bg orange ///////////////
 const addStars = function () {
@@ -42,7 +36,7 @@ const displayAnswer = function () {
   if (electionMade) return;
   submit.addEventListener('click', function () {
     if (!rate) return;
-    answerCont.style.transform = 'translateY(-520%)';
-    ratingComp.style.transform = 'translateX(275%)';
+    ratingComp.classList.add('hidden');
+    answerCont.classList.remove('hidden');
   });
 };
