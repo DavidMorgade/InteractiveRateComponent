@@ -11,12 +11,9 @@ This a challenge for fronendmentor.io
 
 
 
-# What I learned
+# What I learned?
 
-In this section I learned how to transitions with positions on a little component that I can add later to other proyects!
-
-
-
+In this section I learned how to hide and display elements on click manipulating the DOM
 
 # How to change the styles of the component
 
